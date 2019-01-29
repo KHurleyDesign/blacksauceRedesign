@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <title>{% if title != "Home" %}{{ title}} | {% endif %} Blacksauce</title>
+</head>
+
+
+
+
+<body {% if (title=="404" ) %} class="background__404" {% endif %}>
+    {% include "_header.html"%}
+
+    {{ content | safe}}
+
+    <script src="/js/nav.js"></script>
+    <script src="/js/slideshow.js"></script>
+</body>
+
+</html>

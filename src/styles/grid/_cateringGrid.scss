@@ -1,0 +1,270 @@
+.background--imgCater {
+    background-image: url(/images/cateringImage.jpg);
+    background-size: cover;
+}
+
+.grid--cater {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5em 15em 50em;
+
+    @media only screen and (max-width: 850px) {
+        grid-template-rows: auto;
+    }
+}
+
+.h--cater {
+    grid-column: 2/3;
+    text-align: center;
+    justify-content: center;
+}
+
+.p--caterDesc {
+    grid-column: 2/3;
+    text-align: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 1000px) {
+        grid-column: 1 / span 3;
+    }
+}
+
+.form--placement {
+    grid-column: 1 span / 3;
+    grid-row: 3/4;
+
+}
+
+form.form--grid {
+    display: grid;
+    grid-column-gap: 2em;
+    grid-template-columns: repeat(3, 15em);
+    grid-template-rows: repeat(6, 5em);
+    grid-row-gap: 3em;
+
+    @media only screen and (max-width: 850px) {
+        grid-template-columns: repeat(2, 15em);
+        grid-template-rows: auto;
+    }
+
+
+
+    @media only screen and (max-width: 550px) {
+        grid-template-columns: 15em;
+    }
+}
+
+.form--name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.form--email {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+}
+
+.form--phone {
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+
+.form--addressOne {
+    grid-column: 1 / span 3;
+    grid-row: 2/3;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 1 / span 2;
+        grid-row: 3/4;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+}
+
+.form--addressTwo {
+    grid-column: 1 / span 3;
+    grid-row: 3/4;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 1 / span 2;
+        grid-row: 5/6;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+}
+
+.form--city {
+    grid-column: 1;
+    grid-row: 4/5;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+}
+
+.form--state {
+    grid-column: 2;
+    grid-row: 4/5;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+}
+
+.form--zipCode {
+    grid-column: 3;
+    grid-row: 4/5;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 8/9;
+
+    }
+}
+
+.form--eventDate {
+    grid-column: 1;
+    grid-row: 5/6;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+}
+
+.form--time {
+    grid-column: 2;
+    grid-row: 5/6;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+}
+
+.form--guestCount {
+    grid-column: 3;
+    grid-row: 5/6;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 2/3;
+        grid-row: 8/9;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 11/12;
+    }
+}
+
+.form--budget {
+    grid-column: 1;
+    grid-row: 6/7;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+        grid-row: 9/10;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 12/13;
+    }
+}
+
+.form--eventType {
+    grid-column: 2;
+    grid-row: 6/7;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 2/3;
+        grid-row: 9/10;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 13/14;
+    }
+}
+
+.button--submitCater {
+    grid-row: 7/8;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 1/2;
+        grid-row: 10/11;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 14/15;
+    }
+}
+
+.p--required {
+    grid-column: 2/3;
+    grid-row: 7/8;
+
+    @media only screen and (max-width: 850px) {
+        grid-column: 2/3;
+        grid-row: 10/11;
+    }
+
+    @media only screen and (max-width: 550px) {
+        grid-column: 1/2;
+        grid-row: 15/16;
+    }
+}

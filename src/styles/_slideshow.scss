@@ -1,0 +1,79 @@
+//based my css off of https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_quotes_slideshow  and altered it to fit my needs/style choices/ BEM
+
+* {
+    box-sizing: border-box
+}
+
+
+.grid--slideshow {
+    background: #f1f1f1f1;
+    position: relative;
+
+}
+
+/* Slides */
+.testmonial_slides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.button--prev,
+.button--next {
+    border-radius: 0 3px 3px 0;
+    color: #888;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -30px;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    user-select: none;
+    width: auto;
+
+}
+
+/* Position the "next button" to the right */
+.button--next {
+    border-radius: 3px 0 0 3px;
+    position: absolute;
+    right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.button--prev:hover,
+.button--next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    background: $brandOrange;
+    padding: 20px;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.button_dot {
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+    width: 15px;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.button_dot:hover {
+    background-color: #717171;
+}
+
+.para--testmonialNames {
+    color: $brandOrange;
+}

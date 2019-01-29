@@ -1,0 +1,22 @@
+//grid for the header section
+.grid--nav {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 1fr;
+    min-height: 68px;
+
+    @media screen and (max-width: 520px) {
+        grid-template-columns: 50%;
+    }
+}
+
+
+//placement of the logo in the header
+
+.logo_nav {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 15%;
+    width: 100%;
+}

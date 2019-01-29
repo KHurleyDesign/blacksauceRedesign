@@ -1,0 +1,44 @@
+.para--leading {
+    line-height: 150%;
+}
+
+.footer_padding {
+    padding: 5%;
+}
+
+label {
+    color: white;
+    display: block;
+    font-family: $font-stack;
+    padding-bottom: 1em;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background-color: $brandOrange;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-stack;
+    font-size: 16px;
+    height: 50%;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer form {
+    .formBoxGrid {
+        display: flex;
+
+        .formBoxPosition {
+            flex: 1 0 auto;
+            margin-left: 1em;
+            margin-bottom: 1em;
+        }
+    }
+}

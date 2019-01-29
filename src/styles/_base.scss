@@ -1,0 +1,90 @@
+label {
+    color: white;
+    display: block;
+    font-family: $font-stack;
+    padding-bottom: 1em;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background-color: $brandOrange;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-stack;
+    font-size: 16px;
+    height: 50%;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+::placeholder {
+    font-family: $font-stack;
+}
+
+textarea {
+    width: 100%;
+}
+
+h1,
+h2,
+p {
+    font-family: $font-stack
+}
+
+h1 {
+    color: $brandOrange;
+
+    @media only screen and (min-width: 800px) {
+        font-size: 4em;
+    }
+}
+
+h2 {
+
+    @media only screen and (min-width: 800px) {
+        font-size: 2em;
+    }
+}
+
+p {
+
+    line-height: 150%;
+
+
+    @media only screen and (min-width: 800px) {
+        font-size: 125%;
+    }
+
+}
+
+q {
+    font-family: $font-stack;
+}
+
+ul {
+    font-family: $font-stack;
+    list-style-type: none;
+    line-height: 200%;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}

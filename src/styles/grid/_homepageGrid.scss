@@ -1,0 +1,115 @@
+//background image for intro text
+.background--imgHome {
+    background-image: url(/images/coverPhoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+//general grid for the page
+.grid--page {
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    img {
+        margin-top: 1em;
+    }
+
+    @media only screen and (min-width: 800px) {
+        grid-column-gap: 1em;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 3fr 1fr;
+        margin-bottom: 1em;
+
+    }
+}
+
+//placement of the introText
+.intro__heading-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+//placment of the body text
+.intro--bodyText {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+//placement of the order now button
+.button--orderNow {
+    display: inline-block;
+    grid-column: 3/4;
+    grid-row: 1;
+    left: 60%;
+    margin: none;
+    padding: 5px;
+    position: absolute;
+}
+
+//placment for background image for cateringbutton
+.cateringImage {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+}
+
+//button for catering
+.button--catering {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 2em;
+
+    @media only screen and (min-width: 800px) {
+        grid-row: 2/3;
+    }
+}
+
+//placment for background image for newsImage
+.newsImage {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+
+    @media only screen and (min-width: 800px) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+
+//button for news
+.button--news {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 2em;
+
+    @media only screen and (min-width: 800px) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+}
+
+.orderImage {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 100%;
+
+    @media only screen and (min-width: 800px) {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+
+//button for news
+.button--order {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 2em;
+
+    @media only screen and (min-width: 800px) {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+}

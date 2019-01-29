@@ -1,0 +1,152 @@
+// Variables
+$display-nav: 520px;
+
+//above is for when the horizontal nav schould display (change for the silly point)
+
+// JS action classes
+[data-visible="false"] {
+    display: none;
+}
+
+.site-header {
+    display: flow-root;
+}
+
+.site-nav {
+    $top-height: 68px;
+
+    &__trigger {
+        position: absolute;
+        top: 0.9em;
+        right: 0.9em;
+
+
+        &[aria-expanded="true"] {
+
+            .menu-icon__line {
+                $yValue: 10px;
+                $deg: 45deg;
+
+                &:nth-child(1) {
+                    transform: translateY($yValue) rotate($deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(-$yValue) rotate(-$deg);
+                }
+            }
+        }
+
+        @media screen and (min-width: $display-nav) {
+            display: none;
+        }
+    }
+
+    &__list {
+
+        @media screen and (max-width: ($display-nav - 1px)) {
+            background-color: black;
+            flex-direction: column;
+            height: 0;
+            left: 0;
+            margin: 0;
+            position: absolute;
+            right: 0;
+            top: $top-height;
+            width: 100vw;
+
+
+            &[data-visible="true"] {
+                animation: expand 0.3s ease-in-out forwards; // see the expand animation below
+                // this changes the height and opacity of the mobile menu
+                display: flex;
+                z-index: 90;
+            }
+        }
+
+        @media screen and (min-width: $display-nav) {
+            display: flex;
+            justify-content: space-between;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media screen and (max-width: 1100px) {
+                max-width: 500px;
+            }
+
+            @media screen and (max-width: 750px) {
+                max-width: 300px;
+            }
+
+        }
+    }
+
+    &__list-item {
+        align-items: center;
+        display: flex;
+        flex: 1 0 auto;
+
+        @media screen and (max-width: ($display-nav - 1px)) {
+            justify-content: center;
+        }
+
+        @media screen and (min-width: ($display-nav)) {
+            flex: unset;
+        }
+    }
+
+    &__link {
+        background: none;
+        color: white;
+        font-family: $font-stack;
+
+        &:hover {
+            opacity: 1;
+            text-decoration-color: $brandOrange;
+
+        }
+
+        @media screen and (max-width: ($display-nav - 1px)) {
+            color: white;
+            font-size: 200%;
+        }
+    }
+
+    @keyframes expand {
+        from {
+            height: 0;
+            opacity: 0;
+        }
+
+        to {
+            height: calc(100vh - #{$top-height});
+            opacity: 1;
+        }
+    }
+}
+
+.menu-icon {
+    &__line {
+        background-color: $brandOrange;
+        height: 2px;
+
+        &:nth-of-type(even) {
+            //  <-- add this to replace it
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        transition: all 0.3s ease-in-out;
+        width: 42px;
+    }
+}
+
+.is-active {
+    opacity: 1;
+    text-decoration-color: $brandOrange;
+}

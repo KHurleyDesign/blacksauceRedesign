@@ -1,0 +1,66 @@
+.grid--404Pg {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-template-rows: 5fr 5fr 5fr;
+
+    @media only screen and (max-width: 1000px) {
+        grid-template-columns: 5fr;
+        grid-template-rows: 3fr 1fr 1fr 1fr;
+
+    }
+}
+
+.img--404 {
+    grid-column: 1/2;
+    grid-row: 1 / span 3;
+    object-fit: fill;
+    width: 100%;
+
+    @media only screen and (max-width: 1000px) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: center;
+        text-align: center;
+
+    }
+}
+
+.h--404 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    @media only screen and (max-width: 1000px) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.para--404 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    @media only screen and (max-width: 1000px) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+.button--home {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 25%;
+    text-align: center;
+    width: 25%;
+
+    @media only screen and (max-width: 1000px) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        justify-content: center;
+        place-self: center;
+    }
+}
