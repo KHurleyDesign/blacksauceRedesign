@@ -889,7 +889,7 @@ body {
 }
 
 .background--imgMenu {
-  background-image: url(images/orderImage.jpg);
+  background-image: url(/images/orderImage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1110,7 +1110,7 @@ body {
 }
 
 .background--imgCater {
-  background-image: url(images/cateringImage.jpg);
+  background-image: url(/images/cateringImage.jpg);
   background-size: cover;
 }
 
