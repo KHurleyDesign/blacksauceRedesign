@@ -1801,12 +1801,13 @@ footer form .formBoxGrid .formBoxPosition {
   background: none;
   color: white;
   font-family: "Open Sans", sans-serif;
+  text-decoration: none;
 }
 
 .site-nav__link:hover {
   opacity: 1;
-  -webkit-text-decoration-color: #F28705;
-  text-decoration-color: #F28705;
+
+  color: #F28705;
 }
 
 @media screen and (max-width: 519px) {
