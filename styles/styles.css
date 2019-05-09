@@ -714,7 +714,7 @@ body {
 }
 
 .background--imgHome {
-  background-image: url(/images/coverPhoto.jpg);
+  background-image: url(https://i.imgur.com/HuLy68J.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -889,7 +889,7 @@ body {
 }
 
 .background--imgMenu {
-  background-image: url(/images/orderImage.jpg);
+  background-image: url(https://i.imgur.com/M1DFB5F.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1110,7 +1110,7 @@ body {
 }
 
 .background--imgCater {
-  background-image: url(/images/cateringImage.jpg);
+  background-image: url(https://i.imgur.com/K76P8nE.jpg);
   background-size: cover;
 }
 
