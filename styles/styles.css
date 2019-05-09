@@ -361,6 +361,12 @@ template {
   position: relative;
 }
 
+.u-transparentBlackCatering {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5%;
+  position: relative;
+}
+
 .u-marginNone {
   margin: 0;
 }
@@ -1123,13 +1129,6 @@ body {
   grid-template-rows: 5em 15em 50em;
 }
 
-@media only screen and (max-width: 850px) {
-  .grid--cater {
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
-  }
-}
-
 .h--cater {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -1171,17 +1170,13 @@ form.form--grid {
   grid-column-gap: 2em;
   -ms-grid-columns: (15em)[3];
   grid-template-columns: repeat(3, 15em);
-  -ms-grid-rows: (5em)[6];
-  grid-template-rows: repeat(6, 5em);
-  grid-row-gap: 3em;
+
 }
 
 @media only screen and (max-width: 850px) {
   form.form--grid {
     -ms-grid-columns: (15em)[2];
     grid-template-columns: repeat(2, 15em);
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
   }
 }
 
